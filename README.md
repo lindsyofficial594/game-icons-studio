@@ -22,6 +22,16 @@ If you keep a folder of game shortcuts on Windows, they usually show plain, mism
 
 It runs entirely on your PC. The interface opens in your web browser, but it is **not** a website — it is a local tool, and nothing is uploaded anywhere.
 
+## 🎬 See it in action
+
+<div align="center">
+
+[![Watch the demo](https://img.youtube.com/vi/_8Q3NkDApdk/maxresdefault.jpg)](https://www.youtube.com/watch?v=_8Q3NkDApdk)
+
+▶️ *Click to watch a quick walkthrough on YouTube*
+
+</div>
+
 ## Before & After
 
 <div align="center">
