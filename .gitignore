@@ -1,0 +1,22 @@
+# Runtime folders created by the app (do not commit user data)
+data/Cache/
+data/Logs/
+data/Backups/
+data/Icons/
+
+# User-specific config and state (do not commit your own keys/choices)
+data/settings.json
+data/overrides.json
+data/choices.json
+data/knownGames.json
+data/history.json
+
+# The auto-created launcher shortcut (regenerated on first run)
+Game Icons Studio.lnk
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.log
